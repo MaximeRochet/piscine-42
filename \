@@ -1,0 +1,84 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   col_row.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mrochet <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/20 12:01:27 by mrochet           #+#    #+#             */
+/*   Updated: 2020/09/20 13:28:31 by mrochet          ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
+void *same_num_row(int *array)
+{
+	int ligne;
+	int carre-verif;
+	int carre;
+
+	ligne = 0;
+	carre_verif = -4;
+	//parcour les lignes
+	while (ligne < 3)
+	{
+		carre  = 0;
+		//parcour les cases de la ligne
+		//carre = case a comparer a toutes celle de la ligne
+		while( carre / 4 = ligne)
+		{
+			carre_verif == ligne;
+			//compare case i avec toutes les cases de la ligne
+			while (carre_verif < ligne + 4)
+			{
+				while (array[carre] == array[carre_verif])
+					array[carre]++;
+				i++;
+			}
+			carre++;	
+		}
+		ligne++;
+	}
+}
+
+void *same_num_col(int *array)
+{
+	int column;
+	int carre-verif;
+	int carre;
+
+	column = 0;
+	carre_verif = -4;
+	//parcour les colonnes
+	while (column < 3)
+	{
+		carre  = 0;
+		//parcour les cases de la colonne
+		//carre = case a comparer a toutes celles de la colonne
+		while( carre % 4 = column)
+		{
+			carre_verif == column;
+			//compare case i avec toutes les cases de la ligne
+			while (carre_verif < ligne + 4)
+			{
+				while (array[carre] == array[carre_verif])
+					array[carre]++;
+				i++;
+			}
+			carre++;	
+		}
+		ligne++;
+	}
+}
+
+
+
+
+int main(void);
+{
+	int array[16] = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+	if (!(array = (int *)malloc(sizeof(int) * 16)))
+		return (0);
+	array = same_num_col(array);
+
+	free(array);
+}

@@ -1,0 +1,5 @@
+Credentials cache: API:E9A6D1B7-3665-4ECB-83DE-65D95DE4B16C
+        Principal: mrochet@42LYON.FR
+
+  Issued                Expires               Principal
+Sep  8 19:22:04 2020  Sep  9 19:22:04 2020  krbtgt/42LYON.FR@42LYON.FR
